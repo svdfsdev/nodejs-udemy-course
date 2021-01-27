@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', async (req, res) => {
-  const course = new Course({ ...req.body })
+  const course = new Course(...Object.values(req.body))
 
   await course.save()
 

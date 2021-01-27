@@ -1,10 +1,10 @@
-<h1>Add new courses</h1>
+<h1>Edit course {{course.title}}</h1>
 
-<form action="/add" method="POST">
+<form action="/courses/edit" method="POST">
   
   <div class="row">
     <div class="input-field">
-      <input id="title" name="title" type="text" class="validate" required>
+      <input id="title" name="title" type="text" class="validate" value="{{course.title}}" required>
       <label for="title">Сourse name</label>
       <span class="helper-text" data-error="Input name"></span>
     </div>
@@ -12,7 +12,7 @@
 
   <div class="row">
     <div class="input-field">
-      <input id="price" name="price" type="number" class="validate" required min="1">
+      <input id="price" name="price" type="number" class="validate" value="{{course.price}}" required min="1">
       <label for="price">Price</label>
       <span class="helper-text" data-error="Input price"></span>
     </div>
@@ -20,11 +20,13 @@
 
   <div class="row">
     <div class="input-field">
-      <input id="img" name="img" type="text" class="validate" required>
+      <input id="img" name="img" type="text" class="validate" value="{{course.img}}" required>
       <label for="img">URL image</label>
       <span class="helper-text" data-error="Input URL"></span>
     </div>
   </div>
 
-  <button class="btn btn-primary purple accent-4">Add course</button>
+  <input type="hidden" name="id" value="{{course.id}}">
+
+  <button class="btn btn-primary purple accent-4">Edit course</button>
 </form>

@@ -1,10 +1,26 @@
 [
   {
-    "title": {
-      "title": "React 16",
-      "price": "120",
-      "img": "https://cdn.auth0.com/blog/react-js/react.png"
-    },
-    "id": 1611691590300
+    "title": "React",
+    "price": "129",
+    "img": "https://cdn.auth0.com/blog/react-js/react.png",
+    "id": "1611691590300"
+  },
+  {
+    "title": "Angular",
+    "price": "99",
+    "img": "https://sdtimes.com/wp-content/uploads/2018/02/Angular_full_color_logo.svg_.png",
+    "id": 1611693990090
+  },
+  {
+    "title": "Vue",
+    "price": "109",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-5h-J_mzwZkE7bJoyK_Lgfni1y9lSA_hESQ&usqp=CAU",
+    "id": 1611695530705
+  },
+  {
+    "title": "DeadHead",
+    "price": "666",
+    "img": "https://miro.medium.com/max/3840/1*jXdYGA5Sgr1sJseP8eARgw.jpeg",
+    "id": 1611741019427
   }
 ]
